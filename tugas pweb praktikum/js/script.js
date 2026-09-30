@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Toggle Dark / Light Theme (Manipulasi DOM Class & Text)
+    // 2. Pencetan Dark / Light Mode (Manipulasi DOM Class & Text)
     const themeToggleBtn = document.getElementById('themeToggle');
     const body = document.body;
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Form Interactivity & Validation (DOM Event Handling)
+    // 3. Form Interactivity dan Validation (DOM Event Handling)
     const contactForm = document.getElementById('contactForm');
     const notification = document.getElementById('formNotification');
 
@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const name = document.getElementById('name').value;
         
-        // Menampilkan notifikasi sukses secara dinamis
+        // Nampilin notifikasi sukses secara dinamis
         notification.textContent = `Terima kasih ${name}, pesan Anda berhasil dikirim!`;
         notification.classList.remove('hidden');
 
         // Reset form
         contactForm.reset();
 
-        // Sembunyikan notifikasi setelah 4 detik
+        // Hide notifikasi setelah 4 detik
         setTimeout(() => {
             notification.classList.add('hidden');
         }, 4000);
